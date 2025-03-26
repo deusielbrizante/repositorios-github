@@ -25,7 +25,8 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    localStorage.setItem('@repositories', JSON.stringify(repositoriesAdded));
+    if (repositoriesAdded.length > 0)
+      localStorage.setItem('@repositories', JSON.stringify(repositoriesAdded));
   }, [repositoriesAdded]);
 
   const handleSubmit = useCallback((event: FormEvent<HTMLFormElement>) => {

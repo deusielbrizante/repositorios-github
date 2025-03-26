@@ -26,6 +26,7 @@
   margin-top: 10px;
   margin-left: .5rem;
   padding: 0 .5rem;
+  gap: 1rem;
   width: 45vw;
   max-height: 47vh;
   overflow-y: auto;

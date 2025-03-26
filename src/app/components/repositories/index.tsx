@@ -23,7 +23,7 @@ export const Repositories = ({ repositories, removeRepository }: RepositoryFound
               <FaTrash size={18} />
             </button>
             <p>{repository.name}</p>
-            <a onClick={() => router.push(`/repositories/${repository.name}`)}>
+            <a onClick={() => router.push(`/repositories/${encodeURIComponent(repository.name)}`)}>
               <FaBars size={20} />
             </a>
           </li>
