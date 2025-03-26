@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: .5rem;
+  padding: 0 .5rem;
+  width: 45vw;
+  max-height: 47vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #212529;
+    }
+
+    a>svg {
+      cursor: pointer;
+      color: #f50057;
+    }
+  }
+}
+
+.trashButton {
+  cursor: pointer;
+
+  svg {
+    color: #f50057;
+  }
+}

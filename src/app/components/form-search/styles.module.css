@@ -1,0 +1,64 @@
+.formSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  color: white;
+  gap: 20px;
+}
+
+.inputSearch {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  padding: .2rem .5rem;
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  outline: none;
+  color: black;
+  border-radius: .2rem;
+
+  input {
+    width: 95%;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.button {
+  background-color: #f50057;
+  color: white;
+  border: none;
+  padding: .4rem 1rem;
+  border-radius: .2rem;
+  cursor: pointer;
+  min-width: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #ca0047;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+
+    svg {
+      animation: rotateLoading 2s linear infinite;
+    }
+  }
+}
+
+@keyframes rotateLoading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
