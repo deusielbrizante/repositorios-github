@@ -21,7 +21,7 @@ export const RepositoryFound = ({ repository, loading, addRepository, repositori
           <div className={styles.repository}>
             <div>
               <p>{repository.name}</p>
-              <button onClick={!isAdded ? () => addRepository(repository) : undefined} disabled={isAdded} style={isAdded ? {backgroundColor: '#4CAF50'} : {}}>
+              <button onClick={!isAdded ? () => addRepository(repository) : undefined} disabled={isAdded} style={isAdded ? { backgroundColor: '#4CAF50' } : {}}>
                 {isAdded ? <FaCheck size={20} color='#fff' /> : <FaPlus size={20} color='#fff' />}
               </button>
             </div>

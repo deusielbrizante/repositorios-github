@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  color: white;
+  color: #f1f0f0;
   gap: 20px;
 }
 
@@ -15,7 +15,7 @@
   padding: .2rem .5rem;
   width: 500px;
   height: 40px;
-  background-color: white;
+  background-color: #f1f0f0;
   outline: none;
   color: black;
   border-radius: .2rem;
@@ -29,7 +29,7 @@
 
 .button {
   background-color: #f50057;
-  color: white;
+  color: #f1f0f0;
   border: none;
   padding: .4rem 1rem;
   border-radius: .2rem;

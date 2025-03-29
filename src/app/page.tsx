@@ -2,7 +2,6 @@
 
 import { ChangeEvent, FormEvent, useCallback, useEffect, useState } from "react";
 import { FormSearch } from "./components/form-search";
-import { Header } from "./components/header"
 import { api } from "./services/api";
 import { Repository } from "./interface/repository";
 import { RepositoryFound } from "./components/repository-found";
@@ -52,8 +51,6 @@ export default function Home() {
       } catch (error: any) {
         if (error.status === 404)
           openModal('Repositório não encontrado!');
-
-        console.log(error);
       } finally {
         setLoading(false);
       }
@@ -79,13 +76,10 @@ export default function Home() {
     setText(text);
     setIsModalOpen(true);
   };
-
-  const closeModal = () => setIsModalOpen(false);
-
+  
   return (
     <>
-      <Modal isOpen={isModalOpen} onClose={closeModal} text={text} />
-      <Header />
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} text={text} />
       <div>
         <FormSearch search={search} setSearch={handleSearch} submitForm={handleSubmit} loading={loading} />
         <RepositoryFound repository={repositoryFound} loading={loading} addRepository={addRepository} repositories={repositoriesAdded} />

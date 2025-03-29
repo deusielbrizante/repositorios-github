@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "./components/header";
 
 export const metadata: Metadata = {
   title: "Repositórios GitHub",
@@ -10,6 +11,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="pt-BR">
       <body>
+        <Header />
         {children}
       </body>
     </html>

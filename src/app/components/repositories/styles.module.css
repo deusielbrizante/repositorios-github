@@ -8,13 +8,13 @@
   h1 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: white;
+    color: #f1f0f0;
   }
 
   p {
     font-size: 1.5rem;
     font-weight: 400;
-    color: white;
+    color: #f1f0f0;
   }
 }
 
@@ -42,7 +42,7 @@
     width: 100%;
     padding: .5rem 1.5rem;
     border-radius: 5px;
-    background-color: #f8f9fa;
+    background-color: #f1f0f0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
     p {

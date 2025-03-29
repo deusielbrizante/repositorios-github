@@ -16,6 +16,7 @@ export const FormSearch = ({ search, setSearch, submitForm, loading }: FormSearc
         <FaMagnifyingGlass color='#000' />
         <input type="text" placeholder="Pesquise o seu repositório favorito" value={search} onChange={(event) => setSearch(event)} />
       </div>
+      
       <button className={styles.button} type="submit" disabled={loading}>
         {!loading ? "Buscar" : <FaSpinner color='#fff' />}
       </button>
